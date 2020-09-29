@@ -8,8 +8,6 @@ func main()  {
 	fmt.Scan(&mes)
 	signo := mes*mes*10 + dia
 	switch {
-	case signo <= 29:
-		fmt.Println("capricornio")
 	case signo <= 58:
 		fmt.Println("acuario")
 	case signo <= 110:
@@ -19,9 +17,9 @@ func main()  {
 	case signo <= 270:
 		fmt.Println("tauro")
 	case signo <= 380:
-		fmt.Println("géminis")
+		fmt.Println("geminis")
 	case signo <= 512:
-		fmt.Println("cáncer")
+		fmt.Println("cancer")
 	case signo <= 662:
 		fmt.Println("leo")
 	case signo <= 832:
@@ -32,7 +30,7 @@ func main()  {
 		fmt.Println("escorpio")
 	case signo <= 1461:
 		fmt.Println("sagitario")
-	case signo >= 1462:
+	case signo >= 1462 || signo <= 29:
 		fmt.Println("capricornio")
 	}
 }
